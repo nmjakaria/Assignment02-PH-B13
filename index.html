@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWave</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/styles.css" class="css">
+</head>
+
+<body>
+    <header>
+        <nav class="text-white px-6 py-4 border-b-0 md:border-b-[1px] md:border-[rgba(65,37,103,1)]">
+            <div class="max-w-7xl mx-auto flex items-center justify-between ">
+
+                <div class="text-3xl font-extrabold tracking-tight">
+                    <span class="text-white">Tech</span><span
+                        class="bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">Wave</span>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-10 text-gray-300 font-medium">
+                    <a href="#" class="hover:text-white transition">About</a>
+                    <a href="#" class="hover:text-white transition">Episodes</a>
+                    <a href="#" class="hover:text-white transition">Host</a>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="#"
+                        class="flex items-center gap-2 px-6 py-2.5 rounded-full font-semibold bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 hover:opacity-80 transition">
+                        Subscribe <span class="w-5 h-5"><img src="assets/right aero white.png" alt=""></span>
+                    </a>
+                </div>
+
+                <label for="nav-toggle" class="md:hidden cursor-pointer ">
+                    <div class="w-8 h-8 hover:opacity-70 transition" viewBox="0 0 24 24">
+                        <img src="assets/menu.png" alt="">
+                    </div>
+                </label>
+            </div>
+
+            <input type="checkbox" id="nav-toggle" class="hidden peer">
+            <label for="nav-toggle" class="sr-only">Toggle navigation menu</label>
+
+            <div class="hidden peer-checked:flex flex-col md:hidden mt-4 space-y-4 pb-4 border-t border-[rgba(65,37,103,1)]">
+                <a href="#" class="pt-4 hover:text-pink-500">About</a>
+                <a href="#" class="hover:text-pink-500">Episodes</a>
+                <a href="#" class="hover:text-pink-500">Host</a>
+                <a href="#"
+                    class="inline-block w-fit px-6 py-2 rounded-full bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600">Subscribe</a>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>
