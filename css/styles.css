@@ -4,4 +4,50 @@ body {
     background-color: #1A0B2E;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.desktop-nav,
+.desktop-subscribe {
+    display: none;
+}
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.hero-title {
+    font-size: 2.8rem;
+
+}
+
+@media (min-width: 576px) {
+    .hero-title {
+        font-size: 2.8rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .desktop-nav {
+        display: flex !important;
+    }
+
+    .desktop-subscribe {
+        display: block !important;
+    }
+
+    .mobile-menu-btn {
+        display: none !important;
+    }
+
+    .hero-title {
+        font-size: 5.5rem;
+    }
+
+    .nav-container {
+        border-bottom: 1px solid rgba(65, 37, 103, 1);
+    }
 }

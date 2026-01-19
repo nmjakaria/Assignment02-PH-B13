@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <nav class="text-white px-6 py-4 border-b-0 md:border-b-[1px] md:border-[rgba(65,37,103,1)]">
+        <nav class="nav-container text-white px-6 py-4 border-b-0">
             <div class="max-w-7xl mx-auto flex items-center justify-between ">
 
                 <div class="">
@@ -26,31 +26,68 @@
 
                 <div class="hidden md:block">
                     <a href="#"
-                        class="flex items-center gap-2 px-6 py-2.5 rounded-full font-semibold bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 hover:opacity-80 transition">
+                        class="flex items-center gap-2 px-6 py-2.5 rounded-full font-semibold bg-[linear-gradient(47.64deg,#F7E93F,#FB09B4,#9100F8)] hover:opacity-80 transition">
                         Subscribe <span class="w-5 h-5"><img src="assets/right aero white.png" alt=""></span>
                     </a>
                 </div>
 
-                <label for="nav-toggle" class="md:hidden cursor-pointer ">
-                    <div class="w-8 h-8 hover:opacity-70 transition" viewBox="0 0 24 24">
-                        <img src="assets/menu.png" alt="">
+                <label for="nav-toggle" class="mobile-menu-btn cursor-pointer ">
+                    <div class="w-8 h-8 hover:opacity-70 transition">
+                        <img src="assets/hamburger-menu.png" alt="menu">
                     </div>
                 </label>
             </div>
 
             <input type="checkbox" id="nav-toggle" class="hidden peer">
-            <label for="nav-toggle" class="sr-only">Toggle navigation menu</label>
-
             <div
                 class="hidden peer-checked:flex flex-col md:hidden mt-4 space-y-4 pb-4 border-t border-[rgba(65,37,103,1)]">
                 <a href="#" class="pt-4 hover:text-pink-500">About</a>
                 <a href="#" class="hover:text-pink-500">Episodes</a>
                 <a href="#" class="hover:text-pink-500">Host</a>
                 <a href="#"
-                    class="inline-block w-fit px-6 py-2 rounded-full bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600">Subscribe</a>
+                    class="inline-block w-fit px-6 py-2 rounded-full bg-[linear-gradient(47.64deg,#F7E93F,#FB09B4,#9100F8)]">Subscribe</a>
             </div>
         </nav>
     </header>
+    <main class="flex-grow">
+        <section
+            class="hero-section relative min-h-[calc(100vh-80px)] w-full flex flex-col items-center justify-center overflow-hidden py-12">
+            <div class="absolute inset-0 flex items-center justify-center opacity-50">
+                <img src="assets/hero-bg.png" alt="" class="w-full h-full object-cover">
+            </div>
+
+            <div class="relative z-10 flex flex-col items-center justify-center w-full">
+                <div
+                    class="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 flex items-center justify-center bg-[url('assets/hero-circle.png')] bg-contain bg-center bg-no-repeat transition-all duration-300">
+                    <img src="assets/microphone.png" alt="Microphone" class="w-24 md:w-32 object-contain">
+                    <span
+                        class="absolute top-4 right-6 lg:top-8 lg:right-10 bg-[#00FF85] text-[#0E061A] text-[10px] md:text-xs font-bold px-5 py-1.5 rounded-full shadow-[0_0_25px_rgba(34,255,161,0.8)] border border-white/30 tracking-wider">
+                        NEW
+                    </span>
+                </div>
+                <div class="text-center mt-8 px-4">
+                    <h1 class="hero-title text-white font-black tracking-tighter mb-4 leading-tight">
+                        TechWave
+                    </h1>
+                    <p
+                        class="text-white text-base max-w-[320px] sm:max-w-none mx-auto opacity-80 whitespace-normal sm:whitespace-nowrap leading-relaxed">
+                        Your daily dose of tech insights, productivity hacks, and personal growth
+                    </p>
+                </div>
+
+                <div class="flex flex-row gap-4 mt-10">
+                    <a href="#"
+                        class="flex items-center gap-2 px-8 py-3 rounded-full font-bold text-white bg-[linear-gradient(47.64deg,#F7E93F,#FB09B4,#9100F8)] hover:scale-105 transition shadow-lg">
+                        <img src="assets/spotify.png" class="w-5 h-5" alt=""> Listen On Spotify
+                    </a>
+                    <a href="#"
+                        class="flex items-center gap-2 px-8 py-3 rounded-full font-bold text-[#00FF85] border-2 border-[#00FF85]/30 hover:bg-[#00FF85]/10 transition">
+                        <img src="assets/message.png" alt="" class="w-5 h-4"> Subscribe
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
