@@ -127,3 +127,28 @@ body {
         gap: 3rem 1rem;
     }
 }
+
+
+
+@keyframes slowRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+@keyframes micGlow {
+    0%, 100% { filter: drop-shadow(0 0 15px rgba(17, 0, 165, 0.425)) brightness(1); }
+    50% { filter: drop-shadow(0 0 35px rgba(42, 58, 234, 0.9)) brightness(1.2); }
+}
+
+.animate-rotate-bg {
+    animation: slowRotate 8s linear infinite;
+}
+
+.animate-floating-mic {
+    animation: float 4s ease-in-out infinite, micGlow 4s ease-in-out infinite;
+}

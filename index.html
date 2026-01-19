@@ -58,8 +58,12 @@
 
             <div class="relative z-10 flex flex-col items-center justify-center w-full">
                 <div
-                    class="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 flex items-center justify-center bg-[url('assets/hero-circle.png')] bg-contain bg-center bg-no-repeat transition-all duration-300">
-                    <img src="assets/microphone.png" alt="Microphone" class="w-24 md:w-32 object-contain">
+                    class="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 flex items-center justify-center  transition-all duration-300">
+
+                    <div class="absolute inset-0 bg-[url('assets/hero-circle.png')] bg-contain bg-center bg-no-repeat animate-rotate-bg opacity-80"></div>
+                    <div class="relative z-10 animate-floating-mic">
+                        <img src="assets/microphone.png" alt="Microphone" class="w-24 md:w-32 object-contain">
+                    </div>
                     <span
                         class="absolute top-4 right-6 lg:top-8 lg:right-10 bg-[#00FF85] text-[#0E061A] text-[10px] md:text-xs font-bold px-5 py-1.5 rounded-full shadow-[0_0_25px_rgba(34,255,161,0.8)] border border-white/30 tracking-wider">
                         NEW
@@ -69,7 +73,8 @@
                     <h1 class="hero-title text-white font-black tracking-tighter mb-4 leading-tight">
                         TechWave
                     </h1>
-                    <p class="text-white text-base max-w-[320px] sm:max-w-none mx-auto opacity-80 whitespace-normal sm:whitespace-nowrap leading-relaxed">
+                    <p
+                        class="text-white text-base max-w-[320px] sm:max-w-none mx-auto opacity-80 whitespace-normal sm:whitespace-nowrap leading-relaxed">
                         Your daily dose of tech insights, productivity hacks, and personal growth
                     </p>
                 </div>
@@ -93,7 +98,9 @@
 
                 <div class="max-w-4xl mx-auto space-y-6">
                     <p class="text-gray-400 text-base leading-relaxed opacity-90">
-                        TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. We break down complex topics into digestible insights, explore productivity strategies that actually work, and share stories of personal growth from industry leaders.
+                        TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. We break
+                        down complex topics into digestible insights, explore productivity strategies that actually
+                        work, and share stories of personal growth from industry leaders.
                     </p>
                     <p class="text-gray-400 text-base opacity-80">
                         Join thousands of young professionals and tech enthusiasts who start their day with TechWave.
@@ -112,7 +119,8 @@
                         <p class="text-gray-400 text-xs md:text-sm tracking-widest uppercase">Episodes Published</p>
                     </div>
                     <div class="stat-item">
-                        <h3 class="text-[#00FF85] text-4xl md:text-5xl font-extrabold mb-2 flex items-center justify-center gap-1">
+                        <h3
+                            class="text-[#00FF85] text-4xl md:text-5xl font-extrabold mb-2 flex items-center justify-center gap-1">
                             4.9<span class="text-4xl">★</span>
                         </h3>
                         <p class="text-gray-400 text-xs md:text-sm tracking-widest uppercase">Average Rating</p>
@@ -126,47 +134,55 @@
         </section>
 
         <section class="choose-section py-16 lg:py-24">
-    <div class="container mx-auto px-5">
-        <h2 class="section-title text-3xl lg:text-5xl font-bold text-center mb-12">Why Choose TechWave</h2>
-        
-        <div class="choose-grid">
-            <div class="card premium hover:bg-[#3d1475] transition-colors duration-300">
-                <div class="icon mb-4"><img src="assets/headphone.png" alt="" class="w-10 h-auto"></div>
-                <h3 class="text-xl font-semibold mb-2">Premium Audio Quality</h3>
-                <p class="text-sm leading-relaxed text-[#a998c3]">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
-            </div>
+            <div class="container mx-auto px-5">
+                <h2 class="section-title text-3xl lg:text-5xl font-bold text-center mb-12">Why Choose TechWave</h2>
 
-            <div class="card mobile hover:bg-[#3d1475] transition-colors duration-300">
-                <div class="icon mb-4 lg:mb-0 lg:mr-4"><img src="assets/device.png" alt="" class="w-10 h-auto"></div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-2">Mobile Friendly</h3>
-                    <p class="text-sm leading-relaxed text-[#a998c3]">Listen on the go with seamless mobile experience and offline downloads.</p>
+                <div class="choose-grid">
+                    <div class="card premium hover:!bg-[#3d1475] transition-colors duration-300">
+                        <div class="icon mb-4"><img src="assets/headphone.png" alt="" class="w-10 h-auto"></div>
+                        <h3 class="text-xl font-semibold mb-2">Premium Audio Quality</h3>
+                        <p class="text-sm leading-relaxed text-[#a998c3]">Experience crystal-clear sound with
+                            professional-grade recording equipment and expert audio engineering. Every episode is
+                            mastered for optimal listening across all devices and platforms.</p>
+                    </div>
+
+                    <div class="card mobile hover:!bg-[#3d1475] transition-colors duration-300">
+                        <div class="icon mb-4 lg:mb-0 lg:mr-4"><img src="assets/device.png" alt="" class="w-10 h-auto">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Mobile Friendly</h3>
+                            <p class="text-sm leading-relaxed text-[#a998c3]">Listen on the go with seamless mobile
+                                experience and offline downloads.</p>
+                        </div>
+                    </div>
+
+                    <div class="card global hover:!bg-[#3d1475] transition-colors duration-300">
+                        <div class="icon mb-4 lg:mb-0 lg:mr-4"><img src="assets/location.png" alt=""
+                                class="w-10 h-auto"></div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Global Community</h3>
+                            <p class="text-sm leading-relaxed text-[#a998c3]">Connect with tech enthusiasts from over
+                                120 countries worldwide.</p>
+                        </div>
+                    </div>
+
+                    <div class="card exclusive hover:!bg-[#3d1475] transition-colors duration-300">
+                        <div class="icon mb-4"><img src="assets/exclusive.png" alt="" class="w-10 h-auto"></div>
+                        <h3 class="text-xl font-semibold mb-2">Exclusive Interviews</h3>
+                        <p class="text-sm leading-relaxed text-[#a998c3]">Get unprecedented access to industry titans,
+                            startup founders, and tech visionaries. Our host secures exclusive conversations you won't
+                            find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
+                    </div>
+
+                    <div class="card resources hover:!bg-[#3d1475] transition-colors duration-300">
+                        <div class="icon mb-4"><img src="assets/resource.png" alt="" class="w-10 h-auto"></div>
+                        <h3 class="text-xl font-semibold mb-2">Rich Resources</h3>
+                        <p class="text-sm leading-relaxed text-[#a998c3]">Access show notes, transcripts, and additional
+                            learning materials for every episode.</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="card global hover:bg-[#3d1475] transition-colors duration-300">
-                <div class="icon mb-4 lg:mb-0 lg:mr-4"><img src="assets/location.png" alt="" class="w-10 h-auto"></div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-2">Global Community</h3>
-                    <p class="text-sm leading-relaxed text-[#a998c3]">Connect with tech enthusiasts from over 120 countries worldwide.</p>
-                </div>
-            </div>
-
-            <div class="card exclusive hover:bg-[#3d1475] transition-colors duration-300">
-                <div class="icon mb-4"><img src="assets/exclusive.png" alt="" class="w-10 h-auto"></div>
-                <h3 class="text-xl font-semibold mb-2">Exclusive Interviews</h3>
-                <p class="text-sm leading-relaxed text-[#a998c3]">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
-            </div>
-
-            <div class="card resources hover:bg-[#3d1475] transition-colors duration-300">
-                <div class="icon mb-4"><img src="assets/resource.png" alt="" class="w-10 h-auto"></div>
-                <h3 class="text-xl font-semibold mb-2">Rich Resources</h3>
-                <p class="text-sm leading-relaxed text-[#a998c3]">Access show notes, transcripts, and additional learning materials for every episode.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
+        </section>
     </main>
 </body>
 
