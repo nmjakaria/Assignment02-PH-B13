@@ -49,6 +49,21 @@ body {
     margin-bottom: 10px;
 }
 
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .host-card {
     transition: transform 0.3s ease;
 }
@@ -75,7 +90,12 @@ body {
     font-weight: 500;
     transition: all 0.3s ease;
 }
-
+.footer-link-item:hover{
+    color: #FFFFFF;
+    transform: scaleY(1.5);
+    transform: scaleX(1.2);
+    transition: 1.5s;
+}
 @media (min-width: 992px) {
     .desktop-nav {
         display: flex !important;
@@ -237,6 +257,11 @@ body {
 }
 
 @media (max-width: 992px) {
+    .hero-section .hero-section-bgimg{
+        width: 100% !important;
+        max-width: none !important;
+        height: auto !important;
+    }
     .stats-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -295,7 +320,7 @@ body {
 }
 
 .animate-rotate-bg {
-    animation: slowRotate 8s linear infinite;
+    animation: slowRotate 5s linear infinite;
 }
 
 .animate-floating-mic {
